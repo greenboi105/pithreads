@@ -92,8 +92,6 @@ int main(int argc, char ** argv)
     // increment the count of each individual thread count if it satisfies the condition
     // keep in mind the number of times to iterate to simulate a dart being thrown
 
-    // TODO
-
     pthread_t   tid[num_threads];     // to store thread IDs
     thread_info arg[num_threads];     // to pass thread args
 
@@ -124,8 +122,6 @@ int main(int argc, char ** argv)
         p += arg[i].count;
     }
 
-    // DO NOT MODIFY THE CODE BELOW
-    // estimate pi and compare with M_PI, the value defined in math.h
     double my_pi = (double)p / n * 4.0;
     printf("Pi approximation: %.16f Error: %.16f\n", my_pi, fabs(my_pi - M_PI));
     return 0;
