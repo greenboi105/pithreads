@@ -33,8 +33,7 @@ Arbitrarily good approximations of pi can be obtained by computing the sum of th
 Unfortunately, convergence is quite slow: estimating pi with d-digit accuracy requires summing up roughly 10^d+1 terms. For this problem, threads are used
 to speed up the computation. 
 
-The program pi_series_threads.c takes n and the number of threads as command-line arguments, then calls the function
-sum_threads() to compute the sum using threads. 
+The program pi_series_threads.c takes n number of terms to which we compute the sum and the number of threads as command-line arguments, then calls the function sum_threads() to compute the sum using multiple threads.
 
 The program improves the performance of pi_series_serial by using threads to compute portions of the sum independently then combining their 
 results, making it more efficient to compute up to extremely large values of n.
