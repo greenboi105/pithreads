@@ -1,6 +1,6 @@
 # threadcomputations
 
-In this pairs of projects threading is used via POSIX threads to improve the performance of two different methods of estimating the value of pi.
+In this pair of projects threading is used via POSIX threads to improve the performance of two different methods of estimating the value of pi.
 
 Monte-Carlo Method:
 
