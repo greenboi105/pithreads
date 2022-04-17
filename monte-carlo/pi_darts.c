@@ -24,13 +24,9 @@ __thread unsigned short buff[3];
 #define RANDOM_INIT()  (buff[0]=buff[1]=buff[2]=(unsigned short)pthread_self())
 
 /*
-    The pthread_self() function returns the ID of the calling thread. This is the same value that is returned in *thread in the pthread_create call that
-    created the thread. 
-*/
-
-/*
    RANDOM_DOUBLE() returns a random number uniformly distributed between $[0, 1)$
 */
+
 #define RANDOM_DOUBLE() (erand48(buff))
 
 /*
@@ -39,13 +35,6 @@ __thread unsigned short buff[3];
 
 
 ///////////////////////////////////////////////////////////////////////
-
-// Define any necessary macros, types, and additional functions here
-// We probably want to have a struct to store the running sum for the number of darts falling within for each thread
-// Gotta think about what we want to include in the struct & how we are going to determine if the dart falls within
-// we probably also want to define a function that actually calls the function to determine if the dart falls within the interval
-// So we can sum the number that fall within the circle at the end 
-// TODO
 
 typedef struct
 {
