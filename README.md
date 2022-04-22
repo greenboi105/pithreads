@@ -1,4 +1,4 @@
-# threadcomputations
+# pithreads
 
 In this pair of projects threading is used via POSIX threads to improve the performance of two different methods of estimating the value of pi.
 
