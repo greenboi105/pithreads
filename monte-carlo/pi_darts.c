@@ -84,14 +84,6 @@ int main(int argc, char ** argv)
 
     printf("Throwing %lld darts using %d thread%s\n", n, num_threads, (num_threads>1 ? "s" : "") );
 
-    // Add code to create num_threads threads, each simulating the throwing of
-    // darts_per_thread darts at the [0, 1) × [0, 1) square.  Compute in p the
-    // number of darts that fall within the circle of radius 1 centered at (0,0)
-    // we can do this by generating two random numbers x and y and seeing if they are less than 1
-    // if they are less than 1 they fall within the circle, and if not they fall outside
-    // increment the count of each individual thread count if it satisfies the condition
-    // keep in mind the number of times to iterate to simulate a dart being thrown
-
     pthread_t   tid[num_threads];     // to store thread IDs
     thread_info arg[num_threads];     // to pass thread args
 
